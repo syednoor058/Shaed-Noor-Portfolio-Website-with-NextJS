@@ -4,7 +4,7 @@ import { useTheme } from "next-themes";
 import React from "react";
 
 export default function ThemedGridBackground() {
-  const { theme } = useTheme();
+  const { resolvedTheme } = useTheme();
   const [mounted, setMounted] = React.useState(false);
 
   // Wait until client-side hydration is complete
@@ -14,7 +14,7 @@ export default function ThemedGridBackground() {
 
   if (!mounted) return null; // avoid SSR mismatch
 
-  const strokeColor = theme === "dark" ? "#262626" : "#d4d4d4";
+  const strokeColor = resolvedTheme === "dark" ? "#262626" : "#d4d4d4";
 
   return (
     <svg
