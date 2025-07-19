@@ -1,3 +1,4 @@
+import { cn } from "@/lib/utils";
 import Link from "next/link";
 import GlareHover from "../ui/glare-hover";
 
@@ -5,7 +6,7 @@ export function PrimaryButton({ text, url, icon }) {
   return (
     <Link
       href={url}
-      className="flex text-[#fff] bg-gradient-to-tr from-violet-600 hover:from-neutral-800 to-sky-600 hover:to-neutral-800 dark:hover:from-white dark:hover:to-white hover:text-white dark:hover:text-neutral-800 transition-colors duration-300 rounded-xs justify-center items-center"
+      className="flex text-[#fff] bg-gradient-to-tr from-violet-600  to-sky-600 transition-colors duration-300 rounded-xs justify-center items-center"
     >
       <GlareHover
         glareOpacity={0.4}
@@ -18,11 +19,14 @@ export function PrimaryButton({ text, url, icon }) {
   );
 }
 
-export function SecondaryButton({ text, url, icon }) {
+export function SecondaryButton({ text, url, icon, className }) {
   return (
     <Link
       href={url}
-      className="flex text-neutral-800 dark:text-white border border-neutral-800 dark:border-white transition-colors duration-300 rounded-xs justify-center items-center"
+      className={cn(
+        "flex text-neutral-800 dark:text-white border border-neutral-800 dark:border-white transition-colors duration-300 rounded-xs justify-center items-center",
+        className
+      )}
     >
       <GlareHover
         glareOpacity={0.4}

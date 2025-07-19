@@ -1,21 +1,17 @@
 import CountCardGrid from "@/components/Sections/CountCardGrid";
 import MinimalHero from "@/components/ui/minimal-hero";
-import ThemeToggleButton from "@/components/ui/theme-toggle-button";
 import Image from "next/image";
 import shaedImg1 from "../../public/images/syed-shaeduzzaman-noor-hero-wide.webp";
 
 export default function Home() {
   return (
     <>
-      <main>
+      <main className="-mt-16">
 
         {/* Hero section  */}
         <div className="w-full relative">
           <MinimalHero />
           <CountCardGrid />
-          <div className="h-screen absolute z-[50] top-5 right-5 flex">
-            <ThemeToggleButton />
-          </div>
         </div>
 
         {/* About me section */}

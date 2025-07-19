@@ -1,3 +1,4 @@
+import Navbar from "@/components/ui/navbar";
 import { ThemeProvider } from "@/components/ui/theme-provider";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
@@ -19,6 +20,7 @@ export default function RootLayout({ children }) {
         className={`${geistSans.variable} ${geistMono.variable} antialiased bg-white dark:bg-neutral-950 text-neutral-600 dark:text-neutral-400`}
       >
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
+          <Navbar />
           {children}
         </ThemeProvider>
       </body>

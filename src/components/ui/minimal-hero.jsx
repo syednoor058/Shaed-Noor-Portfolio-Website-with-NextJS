@@ -100,7 +100,7 @@ export default function MinimalHero() {
   }, []);
 
   return (
-    <div className="bg-white dark:bg-neutral-950 text-neutral-600 dark:text-[#e6e1d7] font-primary overflow-hidden relative w-full px-4 pt-10 md:px-10 lg:px-20 md:pt-20">
+    <div className="bg-white dark:bg-neutral-950 text-neutral-600 dark:text-[#e6e1d7] font-primary overflow-hidden relative w-full px-4 pt-16 md:px-10 lg:px-20 md:pt-24">
       <ThemedGridBackground />
 
       {/* Corner elements */}
