@@ -159,7 +159,7 @@ export default function MinimalHero() {
         style={{ top: "75%", left: "90%", animationDelay: "6.5s" }}
       ></div>
 
-      <div className="w-full relative z-10 flex flex-col md:items-center gap-7 lg:gap-10">
+      <div className="w-full relative z-10 flex flex-col md:items-center gap-6 lg:gap-10">
         {/* Top tagline */}
         <div className="md:text-center flex">
           <h2 className="w-full text-xs md:text-sm lg:text-base tracking-[0.2em] uppercase flex flex-row gap-4 items-center border border-neutral-500 p-2 rounded-xs">
@@ -182,7 +182,7 @@ export default function MinimalHero() {
                 Syed Shaeduzzaman Noor
               </TextShimmer>
             </div>
-            <div className="text-2xl md:text-3xl lg:text-4xl flex justify-center items-center">
+            <div className="text-xl md:text-3xl lg:text-4xl flex justify-center items-center">
               <div className="w-full flex flex-row gap-3">
                 <span className="lg:w-[50%] text-end text-neutral-600 dark:text-neutral-400 font-normal">
                   I am an expert in{" "}

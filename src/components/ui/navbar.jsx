@@ -25,9 +25,9 @@ import ThemeToggleButton from "./theme-toggle-button";
 // Navigation links array to be used in both desktop and mobile menus
 const navigationLinks = [
   { href: "#", label: "Home", icon: HouseIcon },
-  { href: "#about", label: "About", icon: SquareUserRound },
-  { href: "#services", label: "Services", icon: ConciergeBell },
-  { href: "#projects", label: "Projects", icon: BriefcaseBusiness },
+  { href: "/#about", label: "About", icon: SquareUserRound },
+  { href: "/#services", label: "Services", icon: ConciergeBell },
+  { href: "/#projects", label: "Projects", icon: BriefcaseBusiness },
 ];
 
 export default function Navbar() {

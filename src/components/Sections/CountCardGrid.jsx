@@ -2,7 +2,7 @@
 
 import { useTheme } from "next-themes";
 import { useEffect, useState } from "react";
-import CountUpCard from "../Cards/cards";
+import { CountUpCard } from "../Cards/cards";
 
 export default function CountCardGrid() {
   const { resolvedTheme } = useTheme();
