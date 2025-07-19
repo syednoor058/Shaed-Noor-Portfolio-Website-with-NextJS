@@ -1,7 +1,6 @@
-import Image from "next/image";
 import CountUp from "../ui/count-up";
 
-function CountUpCard({ name, number = 0, symbol = "", imgSrc, alt }) {
+function CountUpCard({ name, number = 0, symbol = "", icon }) {
   return (
     <div className="flex flex-col gap-1 lg:gap-2 relative">
       <div className="flex flex-row items-center">
@@ -19,14 +18,8 @@ function CountUpCard({ name, number = 0, symbol = "", imgSrc, alt }) {
         </span>
       </div>
       <div className="text-sm lg:text-base">{name}</div>
-      <div className="w-full h-full absolute -z-[1] -left-2 -top-2">
-        <div className="w-8 aspect-square relative overflow-hidden">
-          <Image
-            src={imgSrc}
-            alt={alt}
-            className="w-full h-full object-cover"
-          />
-        </div>
+      <div className="w-full h-full absolute -z-[1] -left-3.5 -top-2">
+        <div className="w-8 aspect-square relative overflow-hidden">{icon}</div>
       </div>
     </div>
   );
