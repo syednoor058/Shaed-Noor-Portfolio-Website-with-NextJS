@@ -19,6 +19,11 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
+export const metadata = {
+  title: "Syed Noor | Portfolio Website",
+  description: "Hi, I am Syed Shaeduzzaman Noor, a software engineer with a passion for building impactful web applications.",
+};
+
 export default function RootLayout({ children }) {
   return (
     <html lang="en" className={dmSans.className}>
