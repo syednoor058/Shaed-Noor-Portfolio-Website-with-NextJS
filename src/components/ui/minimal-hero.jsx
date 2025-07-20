@@ -234,12 +234,12 @@ export default function MinimalHero() {
         <div className="w-full flex flex-row gap-5 justify-center">
           <PrimaryButton
             text="Let's Connect"
-            url="/contact"
+            url="/#contact"
             icon={<MoveRight width={20} height={20} />}
           />
           <SecondaryButton
             text="Github"
-            url="/contact"
+            url="https://github.com/syednoor058"
             icon={<Github width={20} height={20} />}
           />
         </div>

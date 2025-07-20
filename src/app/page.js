@@ -1,6 +1,6 @@
 import AboutParallax from "@/components/Parallax/AboutParallax";
 import CountCardGrid from "@/components/Sections/CountCardGrid";
-import { ProjectsBentoGrid } from "@/components/Sections/ProjectsBentoGrid";
+import ProjectsBentoGrid from "@/components/Sections/ProjectsBentoGrid";
 import ServiceCardGrid from "@/components/Sections/ServiceCardGrid";
 import MinimalHero from "@/components/ui/minimal-hero";
 import {
@@ -9,7 +9,7 @@ import {
   MarqueeFade,
   MarqueeItem,
 } from "@/components/ui/shadcn-io/marquee";
-import { BriefcaseBusiness, ConciergeBell } from "lucide-react";
+import { BriefcaseBusiness, ConciergeBell, Star } from "lucide-react";
 import Image from "next/image";
 import expressLogo from "../../public/images/expertise/express.png";
 import fastAPILogo from "../../public/images/expertise/fastapi.png";
@@ -26,7 +26,65 @@ import tailwindLogo from "../../public/images/expertise/tailwind-css.png";
 import wordpressLogo from "../../public/images/expertise/wordpress.png";
 import shaedImg1 from "../../public/images/syed-shaeduzzaman-noor-hero-wide.webp";
 
+import TestimonialGrid from "@/components/Sections/TestimonialGrid";
+import { AnimatedTooltip } from "@/components/ui/avatar-group";
+import azizulImg from "../../public/images/testimonials/azizul.webp";
+import farhanImg from "../../public/images/testimonials/farhan_masum.webp";
+import mehediImg from "../../public/images/testimonials/mehedi.webp";
+import RakibImage from "../../public/images/testimonials/rakib.webp";
+import rituImg from "../../public/images/testimonials/rhitu.webp";
+import tanhaImg from "../../public/images/testimonials/tanha.webp";
+
+import brocelle from "../../public/images/partners/borcelle.png";
+import brigite from "../../public/images/partners/brigite.png";
+import elevate from "../../public/images/partners/elevate.png";
+import indigo from "../../public/images/partners/indigo_company.png";
+import interaid from "../../public/images/partners/interaid.png";
+import puppetbrush from "../../public/images/partners/puppetbrush.png";
+import qahaf from "../../public/images/partners/qahaf.png";
+import retrofino from "../../public/images/partners/retrofino.png";
+import sikderfoundation from "../../public/images/partners/sikder_foundation.png";
+import treatosbd from "../../public/images/partners/treatosBD.png";
+
 export default function Home() {
+  const people = [
+    {
+      id: 1,
+      name: "Azizul Haque",
+      designation: "CEO, InterAiD",
+      image: azizulImg,
+    },
+    {
+      id: 2,
+      name: "Farhan Masum",
+      designation: "SEO Specialist",
+      image: farhanImg,
+    },
+    {
+      id: 3,
+      name: "Rakib Shikdar",
+      designation: "Owner, Retrofino",
+      image: RakibImage,
+    },
+    {
+      id: 4,
+      name: "Tanjina Tanha",
+      designation: "Owner, Tanha's Kitchen",
+      image: tanhaImg,
+    },
+    {
+      id: 5,
+      name: "Mustafa Mehedi",
+      designation: "Owner, Qahaf",
+      image: mehediImg,
+    },
+    {
+      id: 6,
+      name: "Rhituparna Das",
+      designation: "Doctor",
+      image: rituImg,
+    },
+  ];
   return (
     <>
       <main className="-mt-16">
@@ -36,7 +94,7 @@ export default function Home() {
           <CountCardGrid />
         </div>
 
-        <div className="hidden lg:inline-block w-full mt-10">
+        <div id="about" className="hidden lg:inline-block w-full mt-10">
           <AboutParallax />
         </div>
 
@@ -93,91 +151,91 @@ export default function Home() {
             <MarqueeFade side="left" />
             <MarqueeFade side="right" />
             <MarqueeContent>
-              <MarqueeItem className="h-6 lg:h-10 overflow-hidden">
+              <MarqueeItem className="h-6 lg:h-12 overflow-hidden">
                 <Image
                   src={nextjsLogo}
                   alt="Next JS Logo"
                   className="w-full h-full object-cover invert-0 dark:invert"
                 />
               </MarqueeItem>
-              <MarqueeItem className="h-6 lg:h-10 overflow-hidden">
+              <MarqueeItem className="h-6 lg:h-12 overflow-hidden">
                 <Image
                   src={reactLogo}
                   alt="react JS Logo"
                   className="w-full h-full object-cover invert-0 dark:invert"
                 />
               </MarqueeItem>
-              <MarqueeItem className="h-6 lg:h-10 overflow-hidden">
+              <MarqueeItem className="h-6 lg:h-12 overflow-hidden">
                 <Image
                   src={wordpressLogo}
                   alt="wordpress Logo"
                   className="w-full h-full object-cover invert-0 dark:invert"
                 />
               </MarqueeItem>
-              <MarqueeItem className="h-6 lg:h-10 overflow-hidden">
+              <MarqueeItem className="h-6 lg:h-12 overflow-hidden">
                 <Image
                   src={expressLogo}
                   alt="express JS Logo"
                   className="w-full h-full object-cover invert-0 dark:invert"
                 />
               </MarqueeItem>
-              <MarqueeItem className="h-6 lg:h-10 overflow-hidden">
+              <MarqueeItem className="h-6 lg:h-12 overflow-hidden">
                 <Image
                   src={fastAPILogo}
                   alt="fast api Logo"
                   className="w-full h-full object-cover invert-0 dark:invert"
                 />
               </MarqueeItem>
-              <MarqueeItem className="h-6 lg:h-10 overflow-hidden">
+              <MarqueeItem className="h-6 lg:h-12 overflow-hidden">
                 <Image
                   src={nodeLogo}
                   alt="node JS Logo"
                   className="w-full h-full object-cover invert-0 dark:invert"
                 />
               </MarqueeItem>
-              <MarqueeItem className="h-6 lg:h-10 overflow-hidden">
+              <MarqueeItem className="h-6 lg:h-12 overflow-hidden">
                 <Image
                   src={mongodbLogo}
                   alt="mongodb Logo"
                   className="w-full h-full object-cover invert-0 dark:invert"
                 />
               </MarqueeItem>
-              <MarqueeItem className="h-6 lg:h-10 overflow-hidden">
+              <MarqueeItem className="h-6 lg:h-12 overflow-hidden">
                 <Image
                   src={postgreLogo}
                   alt="postgreSQL Logo"
                   className="w-full h-full object-cover invert-0 dark:invert"
                 />
               </MarqueeItem>
-              <MarqueeItem className="h-6 lg:h-10 overflow-hidden">
+              <MarqueeItem className="h-6 lg:h-12 overflow-hidden">
                 <Image
                   src={seleniumLogo}
                   alt="selenium Logo"
                   className="w-full h-full object-cover invert-0 dark:invert"
                 />
               </MarqueeItem>
-              <MarqueeItem className="h-6 lg:h-10 overflow-hidden">
+              <MarqueeItem className="h-6 lg:h-12 overflow-hidden">
                 <Image
                   src={playwrightLogo}
                   alt="playright Logo"
                   className="w-full h-full object-cover invert-0 dark:invert"
                 />
               </MarqueeItem>
-              <MarqueeItem className="h-6 lg:h-10 overflow-hidden">
+              <MarqueeItem className="h-6 lg:h-12 overflow-hidden">
                 <Image
                   src={tailwindLogo}
                   alt="tailwind css Logo"
                   className="w-full h-full object-cover invert-0 dark:invert"
                 />
               </MarqueeItem>
-              <MarqueeItem className="h-6 lg:h-10 overflow-hidden">
+              <MarqueeItem className="h-6 lg:h-12 overflow-hidden">
                 <Image
                   src={framermotionLogo}
                   alt="framer motion Logo"
                   className="w-full h-full object-cover invert-0 dark:invert"
                 />
               </MarqueeItem>
-              <MarqueeItem className="h-6 lg:h-10 overflow-hidden">
+              <MarqueeItem className="h-6 lg:h-12 overflow-hidden">
                 <Image
                   src={shadcnLogo}
                   alt="shad cn Logo"
@@ -190,91 +248,91 @@ export default function Home() {
             <MarqueeFade side="left" />
             <MarqueeFade side="right" />
             <MarqueeContent direction="right">
-              <MarqueeItem className="h-6 lg:h-10 overflow-hidden">
+              <MarqueeItem className="h-6 lg:h-12 overflow-hidden">
                 <Image
                   src={nextjsLogo}
                   alt="Next JS Logo"
                   className="w-full h-full object-cover invert-0 dark:invert"
                 />
               </MarqueeItem>
-              <MarqueeItem className="h-6 lg:h-10 overflow-hidden">
+              <MarqueeItem className="h-6 lg:h-12 overflow-hidden">
                 <Image
                   src={reactLogo}
                   alt="react JS Logo"
                   className="w-full h-full object-cover invert-0 dark:invert"
                 />
               </MarqueeItem>
-              <MarqueeItem className="h-6 lg:h-10 overflow-hidden">
+              <MarqueeItem className="h-6 lg:h-12 overflow-hidden">
                 <Image
                   src={wordpressLogo}
                   alt="wordpress Logo"
                   className="w-full h-full object-cover invert-0 dark:invert"
                 />
               </MarqueeItem>
-              <MarqueeItem className="h-6 lg:h-10 overflow-hidden">
+              <MarqueeItem className="h-6 lg:h-12 overflow-hidden">
                 <Image
                   src={expressLogo}
                   alt="express JS Logo"
                   className="w-full h-full object-cover invert-0 dark:invert"
                 />
               </MarqueeItem>
-              <MarqueeItem className="h-6 lg:h-10 overflow-hidden">
+              <MarqueeItem className="h-6 lg:h-12 overflow-hidden">
                 <Image
                   src={fastAPILogo}
                   alt="fast api Logo"
                   className="w-full h-full object-cover invert-0 dark:invert"
                 />
               </MarqueeItem>
-              <MarqueeItem className="h-6 lg:h-10 overflow-hidden">
+              <MarqueeItem className="h-6 lg:h-12 overflow-hidden">
                 <Image
                   src={nodeLogo}
                   alt="node JS Logo"
                   className="w-full h-full object-cover invert-0 dark:invert"
                 />
               </MarqueeItem>
-              <MarqueeItem className="h-6 lg:h-10 overflow-hidden">
+              <MarqueeItem className="h-6 lg:h-12 overflow-hidden">
                 <Image
                   src={mongodbLogo}
                   alt="mongodb Logo"
                   className="w-full h-full object-cover invert-0 dark:invert"
                 />
               </MarqueeItem>
-              <MarqueeItem className="h-6 lg:h-10 overflow-hidden">
+              <MarqueeItem className="h-6 lg:h-12 overflow-hidden">
                 <Image
                   src={postgreLogo}
                   alt="postgreSQL Logo"
                   className="w-full h-full object-cover invert-0 dark:invert"
                 />
               </MarqueeItem>
-              <MarqueeItem className="h-6 lg:h-10 overflow-hidden">
+              <MarqueeItem className="h-6 lg:h-12 overflow-hidden">
                 <Image
                   src={seleniumLogo}
                   alt="selenium Logo"
                   className="w-full h-full object-cover invert-0 dark:invert"
                 />
               </MarqueeItem>
-              <MarqueeItem className="h-6 lg:h-10 overflow-hidden">
+              <MarqueeItem className="h-6 lg:h-12 overflow-hidden">
                 <Image
                   src={playwrightLogo}
                   alt="playright Logo"
                   className="w-full h-full object-cover invert-0 dark:invert"
                 />
               </MarqueeItem>
-              <MarqueeItem className="h-6 lg:h-10 overflow-hidden">
+              <MarqueeItem className="h-6 lg:h-12 overflow-hidden">
                 <Image
                   src={tailwindLogo}
                   alt="tailwind css Logo"
                   className="w-full h-full object-cover invert-0 dark:invert"
                 />
               </MarqueeItem>
-              <MarqueeItem className="h-6 lg:h-10 overflow-hidden">
+              <MarqueeItem className="h-6 lg:h-12 overflow-hidden">
                 <Image
                   src={framermotionLogo}
                   alt="framer motion Logo"
                   className="w-full h-full object-cover invert-0 dark:invert"
                 />
               </MarqueeItem>
-              <MarqueeItem className="h-6 lg:h-10 overflow-hidden">
+              <MarqueeItem className="h-6 lg:h-12 overflow-hidden">
                 <Image
                   src={shadcnLogo}
                   alt="shad cn Logo"
@@ -287,14 +345,14 @@ export default function Home() {
 
         {/* Services section */}
 
-        <div className="w-full px-4 lg:px-20 py-10 lg:py-20 flex flex-col items-center gap-10 lg:gap-20">
+        <div id="services" className="w-full px-4 lg:px-20 py-10 lg:py-20 flex flex-col items-center gap-10 lg:gap-20">
           <div className="w-full lg:max-w-5xl flex flex-col gap-5 lg:gap-7 lg:items-center">
             <div className="md:text-center flex">
               <h2 className="text-xs md:text-sm lg:text-base tracking-[0.2em] uppercase flex flex-row gap-4 items-center border border-neutral-500 p-2 rounded-xs">
                 <span className="p-2 rounded-xs bg-gradient-to-tr from-violet-600 to-sky-600 text-[#fff]">
                   <ConciergeBell width={18} height={18} />
                 </span>
-                Services I Offer
+                Offered Services
               </h2>
             </div>
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-normal tracking-tight md:text-center text-neutral-800 dark:text-white ">
@@ -312,24 +370,222 @@ export default function Home() {
         </div>
 
         {/* Projects section  */}
-        <div className="w-full px-4 lg:px-20 py-10 lg:py-20 flex flex-col items-center gap-10 lg:gap-20">
+        <div id="projects" className="w-full px-4 lg:px-20 py-10 lg:py-20 flex flex-col items-center gap-10 lg:gap-20">
           <div className="w-full lg:max-w-5xl flex flex-col gap-5 lg:gap-7 lg:items-center">
             <div className="md:text-center flex">
               <h2 className="text-xs md:text-sm lg:text-base tracking-[0.2em] uppercase flex flex-row gap-4 items-center border border-neutral-500 p-2 rounded-xs">
                 <span className="p-2 rounded-xs bg-gradient-to-tr from-violet-600 to-sky-600 text-[#fff]">
                   <BriefcaseBusiness width={18} height={18} />
                 </span>
-                Projects I&apos;ve Worked On
+                Projects Showcase
               </h2>
             </div>
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-normal tracking-tight md:text-center text-neutral-800 dark:text-white ">
-            Work That Speaks Louder Than Words
+              Work That Speaks Louder Than Words
             </h2>
             <p className="lg:text-xl md:text-center">
-            Here are some of the most meaningful projects I’ve built — real-world solutions tailored for scale, usability, and impact. Each project showcases my technical depth, design thinking, and commitment to quality across the software development lifecycle.
+              Here are some of the most meaningful projects I’ve built —
+              real-world solutions tailored for scale, usability, and impact.
+              Each project showcases my technical depth, design thinking, and
+              commitment to quality across the software development lifecycle.
             </p>
           </div>
           <ProjectsBentoGrid />
+        </div>
+
+        {/* Partners section */}
+        <div className="w-full py-10 lg:py-20 flex flex-col gap-6 lg:gap-10">
+          <Marquee>
+            <MarqueeFade side="left" />
+            <MarqueeFade side="right" />
+            <MarqueeContent>
+              <MarqueeItem className="h-6 lg:h-12 overflow-hidden">
+                <Image
+                  src={interaid}
+                  alt="InterAid Logo"
+                  className="w-full h-full object-cover invert-0 dark:invert"
+                />
+              </MarqueeItem>
+              <MarqueeItem className="h-6 lg:h-12 overflow-hidden">
+                <Image
+                  src={puppetbrush}
+                  alt="puppetbrush Logo"
+                  className="w-full h-full object-cover invert-0 dark:invert"
+                />
+              </MarqueeItem>
+              <MarqueeItem className="h-6 lg:h-12 overflow-hidden">
+                <Image
+                  src={brocelle}
+                  alt="brocelle Logo"
+                  className="w-full h-full object-cover invert-0 dark:invert"
+                />
+              </MarqueeItem>
+              <MarqueeItem className="h-6 lg:h-12 overflow-hidden">
+                <Image
+                  src={retrofino}
+                  alt="retrofino Logo"
+                  className="w-full h-full object-cover invert-0 dark:invert"
+                />
+              </MarqueeItem>
+              <MarqueeItem className="h-6 lg:h-12 overflow-hidden">
+                <Image
+                  src={qahaf}
+                  alt="qahaf Logo"
+                  className="w-full h-full object-cover invert-0 dark:invert"
+                />
+              </MarqueeItem>
+              <MarqueeItem className="h-6 lg:h-12 overflow-hidden">
+                <Image
+                  src={indigo}
+                  alt="indigo Logo"
+                  className="w-full h-full object-cover invert-0 dark:invert"
+                />
+              </MarqueeItem>
+              <MarqueeItem className="h-6 lg:h-12 overflow-hidden">
+                <Image
+                  src={brigite}
+                  alt="brigite Logo"
+                  className="w-full h-full object-cover invert-0 dark:invert"
+                />
+              </MarqueeItem>
+              <MarqueeItem className="h-6 lg:h-12 overflow-hidden">
+                <Image
+                  src={treatosbd}
+                  alt="Treatos BD Logo"
+                  className="w-full h-full object-cover invert-0 dark:invert"
+                />
+              </MarqueeItem>
+              <MarqueeItem className="h-6 lg:h-12 overflow-hidden">
+                <Image
+                  src={elevate}
+                  alt="Elevate Logo"
+                  className="w-full h-full object-cover invert-0 dark:invert"
+                />
+              </MarqueeItem>
+              <MarqueeItem className="h-6 lg:h-12 overflow-hidden">
+                <Image
+                  src={sikderfoundation}
+                  alt="sikder foundation Logo"
+                  className="w-full h-full object-cover invert-0 dark:invert"
+                />
+              </MarqueeItem>
+            </MarqueeContent>
+          </Marquee>
+          <Marquee>
+            <MarqueeFade side="left" />
+            <MarqueeFade side="right" />
+            <MarqueeContent direction="right">
+              <MarqueeItem className="h-6 lg:h-12 overflow-hidden">
+                <Image
+                  src={interaid}
+                  alt="InterAid Logo"
+                  className="w-full h-full object-cover invert-0 dark:invert"
+                />
+              </MarqueeItem>
+              <MarqueeItem className="h-6 lg:h-12 overflow-hidden">
+                <Image
+                  src={puppetbrush}
+                  alt="puppetbrush Logo"
+                  className="w-full h-full object-cover invert-0 dark:invert"
+                />
+              </MarqueeItem>
+              <MarqueeItem className="h-6 lg:h-12 overflow-hidden">
+                <Image
+                  src={brocelle}
+                  alt="brocelle Logo"
+                  className="w-full h-full object-cover invert-0 dark:invert"
+                />
+              </MarqueeItem>
+              <MarqueeItem className="h-6 lg:h-12 overflow-hidden">
+                <Image
+                  src={retrofino}
+                  alt="retrofino Logo"
+                  className="w-full h-full object-cover invert-0 dark:invert"
+                />
+              </MarqueeItem>
+              <MarqueeItem className="h-6 lg:h-12 overflow-hidden">
+                <Image
+                  src={qahaf}
+                  alt="qahaf Logo"
+                  className="w-full h-full object-cover invert-0 dark:invert"
+                />
+              </MarqueeItem>
+              <MarqueeItem className="h-6 lg:h-12 overflow-hidden">
+                <Image
+                  src={indigo}
+                  alt="indigo Logo"
+                  className="w-full h-full object-cover invert-0 dark:invert"
+                />
+              </MarqueeItem>
+              <MarqueeItem className="h-6 lg:h-12 overflow-hidden">
+                <Image
+                  src={brigite}
+                  alt="brigite Logo"
+                  className="w-full h-full object-cover invert-0 dark:invert"
+                />
+              </MarqueeItem>
+              <MarqueeItem className="h-6 lg:h-12 overflow-hidden">
+                <Image
+                  src={treatosbd}
+                  alt="Treatos BD Logo"
+                  className="w-full h-full object-cover invert-0 dark:invert"
+                />
+              </MarqueeItem>
+              <MarqueeItem className="h-6 lg:h-12 overflow-hidden">
+                <Image
+                  src={elevate}
+                  alt="Elevate Logo"
+                  className="w-full h-full object-cover invert-0 dark:invert"
+                />
+              </MarqueeItem>
+              <MarqueeItem className="h-6 lg:h-12 overflow-hidden">
+                <Image
+                  src={sikderfoundation}
+                  alt="sikder foundation Logo"
+                  className="w-full h-full object-cover invert-0 dark:invert"
+                />
+              </MarqueeItem>
+            </MarqueeContent>
+          </Marquee>
+        </div>
+
+        {/* Testimonial section  */}
+        <div id="testimonials" className="w-full px-4 lg:px-20 py-10 lg:py-20 flex flex-col items-center gap-10 lg:gap-20">
+          <div className="w-full lg:max-w-5xl flex flex-col gap-5 lg:gap-7 items-center">
+            <div className="w-full flex flex-row gap-3 items-center justify-center">
+              <p>Excellent</p>
+              <div className="flex flex-row gap-1">
+                <div className="p-1 bg-green-500 text-white">
+                  <Star width={18} height={18} />
+                </div>
+                <div className="p-1 bg-green-500 text-white">
+                  <Star width={18} height={18} />
+                </div>
+                <div className="p-1 bg-green-500 text-white">
+                  <Star width={18} height={18} />
+                </div>
+                <div className="p-1 bg-green-500 text-white">
+                  <Star width={18} height={18} />
+                </div>
+                <div className="p-1 bg-green-500 text-white">
+                  <Star width={18} height={18} />
+                </div>
+              </div>
+            </div>
+            <div className="flex flex-row items-center justify-center w-full">
+              <AnimatedTooltip items={people} />
+            </div>
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-normal tracking-tight text-center text-neutral-800 dark:text-white ">
+              Trusted by 12+ Companies & Development Teams All Over the World
+            </h2>
+            <p className="lg:text-xl text-center">
+              Don&apos;t just take my word for it — hear from the people and
+              businesses I&apos;ve collaborated with. From startups to
+              established brands, here&apos;s what they have to say about
+              working together.
+            </p>
+          </div>
+          <TestimonialGrid />
         </div>
       </main>
     </>

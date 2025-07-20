@@ -1,3 +1,5 @@
+"use client";
+
 import {
   BriefcaseBusiness,
   ConciergeBell,
@@ -18,7 +20,9 @@ import {
   PopoverContent,
   PopoverTrigger,
 } from "@/components/ui/popover";
+import Image from "next/image";
 import Link from "next/link";
+import syedNoorImg from "../../../public/images/syed-noor-footer-image.jpg";
 import GlareHover from "./glare-hover";
 import ThemeToggleButton from "./theme-toggle-button";
 
@@ -100,7 +104,15 @@ export default function Navbar() {
                 </NavigationMenu>
               </PopoverContent>
             </Popover>
-            <div className="text-base font-semibold text-neutral-800 dark:text-white uppercase font-mono">
+            <div className="text-base font-semibold text-neutral-800 dark:text-white uppercase font-mono flex flex-row gap-3 items-center">
+              <div className="w-8 aspect-square  relative">
+                <Image
+                  src={syedNoorImg}
+                  alt="syed noor profile photo"
+                  className="w-full h-full object-cover rounded-full relative z-[2]"
+                />
+                <div className="absolute -right-0.5 top-0.5 w-[10px] h-[10px] z-[5] rounded-full bg-lime-500 border border-neutral-50"></div>
+              </div>
               Syed Noor
             </div>
           </div>

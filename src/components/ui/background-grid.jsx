@@ -14,7 +14,7 @@ export default function ThemedGridBackground() {
 
   if (!mounted) return null; // avoid SSR mismatch
 
-  const strokeColor = resolvedTheme === "dark" ? "#262626" : "#d4d4d4";
+  const strokeColor = resolvedTheme === "dark" ? "#262626" : "#cfcfcf";
 
   return (
     <svg
