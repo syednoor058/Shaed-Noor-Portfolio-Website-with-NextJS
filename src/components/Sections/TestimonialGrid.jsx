@@ -54,7 +54,7 @@ export default function TestimonialGrid() {
         color={spotlightBgColor}
         name="Tanjina Tanha"
         designation="Owner, Tanha's Kitchen"
-        feedback="Absolutely loved working with Devion Ark! They completely transformed our social media game at Sweet Cakes. Our engagement has gone way up, and we've even had customers mention they found us through our Instagram!"
+        feedback="Absolutely loved working with Syed Shaeduzzaman Noor! He completely transformed our social media game at Sweet Cakes. Our engagement has gone way up, and we've even had customers mention he found us through our Instagram!"
         img={tanhaImg}
         alt="tanjina tanha image"
         icon={<MessageCircleHeart width={16} height={16} />}
@@ -62,9 +62,9 @@ export default function TestimonialGrid() {
       />
       <TestimonialCard
         color={spotlightBgColor}
-        name="Md Azizul Haque"
-        designation="CEO, InterAiD"
-        feedback="Working with Shaed Noor has been a game-changer for us at InterAiD. From managing our Facebook page and running effective ads campaigns to keeping our website updated and professional — they've handled it all with care and consistency."
+        name="Syed Mustafa Mehedi"
+        designation="Owner, Qahaf"
+        feedback="We're super happy with Syed Noor! His ad campaigns and social media management really boosted our clothing brand, Qahaf. He brought in great engagement and sales with a professional yet approachable style. Highly recommended!"
         img={mehediImg}
         alt="mustafa mehedi image"
         icon={<Instagram width={16} height={16} />}
@@ -72,9 +72,9 @@ export default function TestimonialGrid() {
       />
       <TestimonialCard
         color={spotlightBgColor}
-        name="Md Azizul Haque"
-        designation="CEO, InterAiD"
-        feedback="Working with Shaed Noor has been a game-changer for us at InterAiD. From managing our Facebook page and running effective ads campaigns to keeping our website updated and professional — they've handled it all with care and consistency."
+        name="Rhituparna Das"
+        designation="Doctor"
+        feedback="We are incredibly pleased with Syed! He developed a fantastic real estate management system for us that is streamlined our operations. His team was professional, responsive, and delivered exactly what we needed. Highly recommend his services!"
         img={rituImg}
         alt="ritu das image"
         icon={<Facebook width={16} height={16} />}
@@ -82,9 +82,9 @@ export default function TestimonialGrid() {
       />
       <TestimonialCard
         color={spotlightBgColor}
-        name="Md Azizul Haque"
-        designation="CEO, InterAiD"
-        feedback="Working with Shaed Noor has been a game-changer for us at InterAiD. From managing our Facebook page and running effective ads campaigns to keeping our website updated and professional — they've handled it all with care and consistency."
+        name="Rakib Shikder"
+        designation="Owner, Retrofino"
+        feedback="I am thrilled with the results from our recent ad campaign run by Shaed Noor! With just a small budget, he helped us reach almost twenty thousands of local people and generated two hundreds of real customer messages."
         img={RakibImage}
         alt="rakib shikdar image"
         icon={<Instagram width={16} height={16} />}
