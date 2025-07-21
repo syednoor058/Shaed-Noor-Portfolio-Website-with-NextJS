@@ -46,7 +46,7 @@ export default function Footer() {
 
             <div className="flex flex-wrap gap-3 mt-2">
               <Link
-                href=""
+                href="https://www.facebook.com/shaed.noor/"
                 className=" inline-block border border-neutral-600 dark:border-neutral-600 rounded-full overflow-hidden"
               >
                 <GlareHover className="p-2">
@@ -54,7 +54,7 @@ export default function Footer() {
                 </GlareHover>
               </Link>
               <Link
-                href=""
+                href="https://www.instagram.com/shaed_noor/"
                 className="inline-block overflow-hidden border border-neutral-600 dark:border-neutral-600 rounded-full"
               >
                 <GlareHover className="p-2">
@@ -62,7 +62,7 @@ export default function Footer() {
                 </GlareHover>
               </Link>
               <Link
-                href=""
+                href="https://www.linkedin.com/in/shaednoor/"
                 className="inline-block overflow-hidden border border-neutral-600 dark:border-neutral-600 rounded-full"
               >
                 <GlareHover className="p-2">
@@ -70,7 +70,7 @@ export default function Footer() {
                 </GlareHover>
               </Link>
               <Link
-                href=""
+                href="syednoor058@gmail.com"
                 className="inline-block overflow-hidden border border-neutral-600 dark:border-neutral-600 rounded-full"
               >
                 <GlareHover className="p-2">
