@@ -185,7 +185,7 @@ export default function MinimalHero() {
             <div className="text-xl md:text-3xl lg:text-4xl flex justify-center items-center">
               <div className="w-full flex flex-row gap-3">
                 <span className="lg:w-[50%] text-end text-neutral-600 dark:text-neutral-400 font-normal">
-                  I am an expert in{" "}
+                  I am an expert{" "}
                 </span>
                 <TextLoop
                   className="lg:w-[50%] text-start text-neutral-800 dark:text-neutral-200 font-bold"

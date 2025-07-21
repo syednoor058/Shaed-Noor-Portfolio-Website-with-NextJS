@@ -81,35 +81,6 @@ export default function ThemedGridBackground() {
         className="grid-line"
         style={{ animationDelay: "3s", opacity: 0.05 }}
       />
-      {/* Dots */}
-      <circle
-        cx="20%"
-        cy="20%"
-        r="2"
-        className="detail-dot"
-        style={{ animationDelay: "3s" }}
-      />
-      <circle
-        cx="80%"
-        cy="20%"
-        r="2"
-        className="detail-dot"
-        style={{ animationDelay: "3.2s" }}
-      />
-      <circle
-        cx="20%"
-        cy="80%"
-        r="2"
-        className="detail-dot"
-        style={{ animationDelay: "3.4s" }}
-      />
-      <circle
-        cx="80%"
-        cy="80%"
-        r="2"
-        className="detail-dot"
-        style={{ animationDelay: "3.6s" }}
-      />
     </svg>
   );
 }

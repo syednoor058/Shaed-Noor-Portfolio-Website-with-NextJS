@@ -32,6 +32,9 @@ export default function ContactForm() {
     setIsSubmitting(true);
 
     try {
+      console.log(process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY);
+      console.log(process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID);
+      console.log(process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID);
       const result = await emailjs.sendForm(
         process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID, // Replace with your EmailJS Service ID
         process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID, // Replace with your EmailJS Template ID
@@ -112,7 +115,7 @@ export default function ContactForm() {
             placeholder="Tell us more about your project or requirements..."
             value={formData.message}
             onChange={(e) => handleInputChange("message", e.target.value)}
-            className="min-h-[120px] w-full rounded border-[1.5px] border-neutral-200 dark:border-neutral-700 bg-transparent dark:bg-[#101010] px-5 py-3 text-base ring-offset-white placeholder:text-neutral-500 dark:placeholder:text-neutral-400 focus:border-neutral-300 focus:outline-none focus:ring-1 focus:ring-neutral-300 focus:ring-offset-0 disabled:cursor-not-allowed disabled:opacity-50 resize-none text-neutral-600"
+            className="min-h-[120px] w-full rounded border-[1.5px] border-neutral-200 dark:border-neutral-700 bg-transparent dark:bg-[#101010] px-5 py-3 text-base ring-offset-white placeholder:text-neutral-500 dark:placeholder:text-neutral-400 focus:border-neutral-300 focus:outline-none focus:ring-1 focus:ring-neutral-300 focus:ring-offset-0 disabled:cursor-not-allowed disabled:opacity-50 resize-none text-neutral-600 dark:text-neutral-300"
             required
           />
         </div>
