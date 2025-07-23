@@ -2,7 +2,7 @@
 
 import { useTheme } from "next-themes";
 import { useEffect, useState } from "react";
-import agencyWebMockup from "../../../public/images/projects/agency-website-mockup.jpg";
+import agencyWebMockup from "../../../public/images/projects/agency-website-mockup.webp";
 import petShopMockup from "../../../public/images/projects/petshop-mockup.webp";
 import propsuitScreenShot from "../../../public/images/projects/propsuit-mmockup.webp";
 import sportswearMockup from "../../../public/images/projects/sportswear-ecommerce-mockup.webp";
