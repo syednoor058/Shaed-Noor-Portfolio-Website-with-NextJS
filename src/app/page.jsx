@@ -146,99 +146,57 @@ export default function Home() {
         </div>
 
         {/* Expertise section */}
-        <div className="w-full py-10 lg:py-20 flex flex-col gap-6 lg:gap-10">
+        <div className="w-full py-10 lg:py-14 flex flex-col gap-6 lg:gap-10">
           <Marquee>
             <MarqueeFade side="left" />
             <MarqueeFade side="right" />
             <MarqueeContent>
-              <MarqueeItem className="h-6 lg:h-12 overflow-hidden">
+              <MarqueeItem className="h-6 lg:h-10 overflow-hidden">
                 <Image
                   src={nextjsLogo}
                   alt="Next JS Logo"
                   className="w-full h-full object-cover  invert"
                 />
               </MarqueeItem>
-              <MarqueeItem className="h-6 lg:h-12 overflow-hidden">
+              <MarqueeItem className="h-6 lg:h-10 overflow-hidden">
                 <Image
                   src={reactLogo}
                   alt="react JS Logo"
                   className="w-full h-full object-cover  invert"
                 />
               </MarqueeItem>
-              <MarqueeItem className="h-6 lg:h-12 overflow-hidden">
+              <MarqueeItem className="h-6 lg:h-10 overflow-hidden">
                 <Image
                   src={wordpressLogo}
                   alt="wordpress Logo"
                   className="w-full h-full object-cover  invert"
                 />
               </MarqueeItem>
-              <MarqueeItem className="h-6 lg:h-12 overflow-hidden">
+              <MarqueeItem className="h-6 lg:h-10 overflow-hidden">
                 <Image
                   src={expressLogo}
                   alt="express JS Logo"
                   className="w-full h-full object-cover  invert"
                 />
               </MarqueeItem>
-              <MarqueeItem className="h-6 lg:h-12 overflow-hidden">
+              <MarqueeItem className="h-6 lg:h-10 overflow-hidden">
                 <Image
                   src={fastAPILogo}
                   alt="fast api Logo"
                   className="w-full h-full object-cover  invert"
                 />
               </MarqueeItem>
-              <MarqueeItem className="h-6 lg:h-12 overflow-hidden">
+              <MarqueeItem className="h-6 lg:h-10 overflow-hidden">
                 <Image
                   src={nodeLogo}
                   alt="node JS Logo"
                   className="w-full h-full object-cover  invert"
                 />
               </MarqueeItem>
-              <MarqueeItem className="h-6 lg:h-12 overflow-hidden">
+              <MarqueeItem className="h-6 lg:h-10 overflow-hidden">
                 <Image
                   src={mongodbLogo}
                   alt="mongodb Logo"
-                  className="w-full h-full object-cover  invert"
-                />
-              </MarqueeItem>
-              <MarqueeItem className="h-6 lg:h-12 overflow-hidden">
-                <Image
-                  src={postgreLogo}
-                  alt="postgreSQL Logo"
-                  className="w-full h-full object-cover  invert"
-                />
-              </MarqueeItem>
-              <MarqueeItem className="h-6 lg:h-12 overflow-hidden">
-                <Image
-                  src={seleniumLogo}
-                  alt="selenium Logo"
-                  className="w-full h-full object-cover  invert"
-                />
-              </MarqueeItem>
-              <MarqueeItem className="h-6 lg:h-12 overflow-hidden">
-                <Image
-                  src={playwrightLogo}
-                  alt="playright Logo"
-                  className="w-full h-full object-cover  invert"
-                />
-              </MarqueeItem>
-              <MarqueeItem className="h-6 lg:h-12 overflow-hidden">
-                <Image
-                  src={tailwindLogo}
-                  alt="tailwind css Logo"
-                  className="w-full h-full object-cover  invert"
-                />
-              </MarqueeItem>
-              <MarqueeItem className="h-6 lg:h-12 overflow-hidden">
-                <Image
-                  src={framermotionLogo}
-                  alt="framer motion Logo"
-                  className="w-full h-full object-cover  invert"
-                />
-              </MarqueeItem>
-              <MarqueeItem className="h-6 lg:h-12 overflow-hidden">
-                <Image
-                  src={shadcnLogo}
-                  alt="shad cn Logo"
                   className="w-full h-full object-cover  invert"
                 />
               </MarqueeItem>
@@ -248,91 +206,42 @@ export default function Home() {
             <MarqueeFade side="left" />
             <MarqueeFade side="right" />
             <MarqueeContent direction="right">
-              <MarqueeItem className="h-6 lg:h-12 overflow-hidden">
-                <Image
-                  src={nextjsLogo}
-                  alt="Next JS Logo"
-                  className="w-full h-full object-cover  invert"
-                />
-              </MarqueeItem>
-              <MarqueeItem className="h-6 lg:h-12 overflow-hidden">
-                <Image
-                  src={reactLogo}
-                  alt="react JS Logo"
-                  className="w-full h-full object-cover  invert"
-                />
-              </MarqueeItem>
-              <MarqueeItem className="h-6 lg:h-12 overflow-hidden">
-                <Image
-                  src={wordpressLogo}
-                  alt="wordpress Logo"
-                  className="w-full h-full object-cover  invert"
-                />
-              </MarqueeItem>
-              <MarqueeItem className="h-6 lg:h-12 overflow-hidden">
-                <Image
-                  src={expressLogo}
-                  alt="express JS Logo"
-                  className="w-full h-full object-cover  invert"
-                />
-              </MarqueeItem>
-              <MarqueeItem className="h-6 lg:h-12 overflow-hidden">
-                <Image
-                  src={fastAPILogo}
-                  alt="fast api Logo"
-                  className="w-full h-full object-cover  invert"
-                />
-              </MarqueeItem>
-              <MarqueeItem className="h-6 lg:h-12 overflow-hidden">
-                <Image
-                  src={nodeLogo}
-                  alt="node JS Logo"
-                  className="w-full h-full object-cover  invert"
-                />
-              </MarqueeItem>
-              <MarqueeItem className="h-6 lg:h-12 overflow-hidden">
-                <Image
-                  src={mongodbLogo}
-                  alt="mongodb Logo"
-                  className="w-full h-full object-cover  invert"
-                />
-              </MarqueeItem>
-              <MarqueeItem className="h-6 lg:h-12 overflow-hidden">
+              <MarqueeItem className="h-6 lg:h-10 overflow-hidden">
                 <Image
                   src={postgreLogo}
                   alt="postgreSQL Logo"
                   className="w-full h-full object-cover  invert"
                 />
               </MarqueeItem>
-              <MarqueeItem className="h-6 lg:h-12 overflow-hidden">
+              <MarqueeItem className="h-6 lg:h-10 overflow-hidden">
                 <Image
                   src={seleniumLogo}
                   alt="selenium Logo"
                   className="w-full h-full object-cover  invert"
                 />
               </MarqueeItem>
-              <MarqueeItem className="h-6 lg:h-12 overflow-hidden">
+              <MarqueeItem className="h-6 lg:h-10 overflow-hidden">
                 <Image
                   src={playwrightLogo}
                   alt="playright Logo"
                   className="w-full h-full object-cover  invert"
                 />
               </MarqueeItem>
-              <MarqueeItem className="h-6 lg:h-12 overflow-hidden">
+              <MarqueeItem className="h-6 lg:h-10 overflow-hidden">
                 <Image
                   src={tailwindLogo}
                   alt="tailwind css Logo"
                   className="w-full h-full object-cover  invert"
                 />
               </MarqueeItem>
-              <MarqueeItem className="h-6 lg:h-12 overflow-hidden">
+              <MarqueeItem className="h-6 lg:h-10 overflow-hidden">
                 <Image
                   src={framermotionLogo}
                   alt="framer motion Logo"
                   className="w-full h-full object-cover  invert"
                 />
               </MarqueeItem>
-              <MarqueeItem className="h-6 lg:h-12 overflow-hidden">
+              <MarqueeItem className="h-6 lg:h-10 overflow-hidden">
                 <Image
                   src={shadcnLogo}
                   alt="shad cn Logo"
@@ -400,78 +309,43 @@ export default function Home() {
         </div>
 
         {/* Partners section */}
-        <div className="w-full py-10 lg:py-20 flex flex-col gap-6 lg:gap-10">
+        <div className="w-full py-10 lg:py-14 flex flex-col gap-6 lg:gap-10">
           <Marquee>
             <MarqueeFade side="left" />
             <MarqueeFade side="right" />
             <MarqueeContent>
-              <MarqueeItem className="h-6 lg:h-12 overflow-hidden">
+              <MarqueeItem className="h-6 lg:h-10 overflow-hidden">
                 <Image
                   src={interaid}
                   alt="InterAid Logo"
                   className="w-full h-full object-cover  invert"
                 />
               </MarqueeItem>
-              <MarqueeItem className="h-6 lg:h-12 overflow-hidden">
+              <MarqueeItem className="h-6 lg:h-10 overflow-hidden">
                 <Image
                   src={puppetbrush}
                   alt="puppetbrush Logo"
                   className="w-full h-full object-cover  invert"
                 />
               </MarqueeItem>
-              <MarqueeItem className="h-6 lg:h-12 overflow-hidden">
+              <MarqueeItem className="h-6 lg:h-10 overflow-hidden">
                 <Image
                   src={brocelle}
                   alt="brocelle Logo"
                   className="w-full h-full object-cover  invert"
                 />
               </MarqueeItem>
-              <MarqueeItem className="h-6 lg:h-12 overflow-hidden">
+              <MarqueeItem className="h-6 lg:h-10 overflow-hidden">
                 <Image
                   src={retrofino}
                   alt="retrofino Logo"
                   className="w-full h-full object-cover  invert"
                 />
               </MarqueeItem>
-              <MarqueeItem className="h-6 lg:h-12 overflow-hidden">
+              <MarqueeItem className="h-6 lg:h-10 overflow-hidden">
                 <Image
                   src={qahaf}
                   alt="qahaf Logo"
-                  className="w-full h-full object-cover  invert"
-                />
-              </MarqueeItem>
-              <MarqueeItem className="h-6 lg:h-12 overflow-hidden">
-                <Image
-                  src={indigo}
-                  alt="indigo Logo"
-                  className="w-full h-full object-cover  invert"
-                />
-              </MarqueeItem>
-              <MarqueeItem className="h-6 lg:h-12 overflow-hidden">
-                <Image
-                  src={brigite}
-                  alt="brigite Logo"
-                  className="w-full h-full object-cover  invert"
-                />
-              </MarqueeItem>
-              <MarqueeItem className="h-6 lg:h-12 overflow-hidden">
-                <Image
-                  src={treatosbd}
-                  alt="Treatos BD Logo"
-                  className="w-full h-full object-cover  invert"
-                />
-              </MarqueeItem>
-              <MarqueeItem className="h-6 lg:h-12 overflow-hidden">
-                <Image
-                  src={elevate}
-                  alt="Elevate Logo"
-                  className="w-full h-full object-cover  invert"
-                />
-              </MarqueeItem>
-              <MarqueeItem className="h-6 lg:h-12 overflow-hidden">
-                <Image
-                  src={sikderfoundation}
-                  alt="sikder foundation Logo"
                   className="w-full h-full object-cover  invert"
                 />
               </MarqueeItem>
@@ -481,70 +355,35 @@ export default function Home() {
             <MarqueeFade side="left" />
             <MarqueeFade side="right" />
             <MarqueeContent direction="right">
-              <MarqueeItem className="h-6 lg:h-12 overflow-hidden">
-                <Image
-                  src={interaid}
-                  alt="InterAid Logo"
-                  className="w-full h-full object-cover  invert"
-                />
-              </MarqueeItem>
-              <MarqueeItem className="h-6 lg:h-12 overflow-hidden">
-                <Image
-                  src={puppetbrush}
-                  alt="puppetbrush Logo"
-                  className="w-full h-full object-cover  invert"
-                />
-              </MarqueeItem>
-              <MarqueeItem className="h-6 lg:h-12 overflow-hidden">
-                <Image
-                  src={brocelle}
-                  alt="brocelle Logo"
-                  className="w-full h-full object-cover  invert"
-                />
-              </MarqueeItem>
-              <MarqueeItem className="h-6 lg:h-12 overflow-hidden">
-                <Image
-                  src={retrofino}
-                  alt="retrofino Logo"
-                  className="w-full h-full object-cover  invert"
-                />
-              </MarqueeItem>
-              <MarqueeItem className="h-6 lg:h-12 overflow-hidden">
-                <Image
-                  src={qahaf}
-                  alt="qahaf Logo"
-                  className="w-full h-full object-cover  invert"
-                />
-              </MarqueeItem>
-              <MarqueeItem className="h-6 lg:h-12 overflow-hidden">
+              <MarqueeItem className="h-6 lg:h-10 overflow-hidden">
                 <Image
                   src={indigo}
                   alt="indigo Logo"
                   className="w-full h-full object-cover  invert"
                 />
               </MarqueeItem>
-              <MarqueeItem className="h-6 lg:h-12 overflow-hidden">
+              <MarqueeItem className="h-6 lg:h-10 overflow-hidden">
                 <Image
                   src={brigite}
                   alt="brigite Logo"
                   className="w-full h-full object-cover  invert"
                 />
               </MarqueeItem>
-              <MarqueeItem className="h-6 lg:h-12 overflow-hidden">
+              <MarqueeItem className="h-6 lg:h-10 overflow-hidden">
                 <Image
                   src={treatosbd}
                   alt="Treatos BD Logo"
                   className="w-full h-full object-cover  invert"
                 />
               </MarqueeItem>
-              <MarqueeItem className="h-6 lg:h-12 overflow-hidden">
+              <MarqueeItem className="h-6 lg:h-10 overflow-hidden">
                 <Image
                   src={elevate}
                   alt="Elevate Logo"
                   className="w-full h-full object-cover  invert"
                 />
               </MarqueeItem>
-              <MarqueeItem className="h-6 lg:h-12 overflow-hidden">
+              <MarqueeItem className="h-6 lg:h-10 overflow-hidden">
                 <Image
                   src={sikderfoundation}
                   alt="sikder foundation Logo"

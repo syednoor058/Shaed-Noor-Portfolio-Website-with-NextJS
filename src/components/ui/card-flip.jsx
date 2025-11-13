@@ -7,17 +7,18 @@ import { useState } from "react";
 import mailNotification from "../../../public/images/portfolio/mail-notification.png";
 
 export default function CardFlip({
-  title = "Brand Revival with Social Media Marketing Strategy",
-  subtitle = "Hover on to see more details",
-  description = "Helped to rebuild brand's online growth and position that it deserved with consistent contents and strategy.",
+  title = "Full Stack Ecommerce Application with Next JS",
+  subtitle = "Hover on the card to see more details.",
+  description = "Lumivance is an open-source Next.js eCommerce frontend project. It provides a modern, fast and customizable shopping UI.",
   features = [
-    "Regular content upload",
-    "Organic promotions",
-    "Ads campaign setup",
-    "Leads generation",
-    "Content creation",
-    "Brand awareness",
+    "Server-side-rendering with Next JS",
+    "Modern UI experience with Tailwind CSS",
+    "Full stack integeration",
+    "User authentication is managed by Clerk",
+    "Secured database hosted on MongoDB",
+    "Full responsive interface",
   ],
+  onClickFunc = {}
 }) {
   const [isFlipped, setIsFlipped] = useState(false);
 
@@ -68,7 +69,7 @@ export default function CardFlip({
                     }}
                   />
                 ))}
-                <div className="absolute w-20 h-20 overflow-hidden">
+                <div className="absolute w-32 h-32 overflow-hidden">
                   <Image
                     src={mailNotification}
                     alt="main notification"
@@ -80,7 +81,7 @@ export default function CardFlip({
           </div>
 
           <div className="absolute bottom-0 left-0 right-0 p-5">
-            <div className="flex items-center justify-between gap-3">
+            <div className="flex items-center justify-between gap-5">
               <div className="space-y-1.5">
                 <h3 className="text-lg font-bold text-white leading-snug tracking-tighter transition-all duration-500 ease-out-expo group-hover:translate-y-[-4px]">
                   {title}
@@ -122,7 +123,7 @@ export default function CardFlip({
               <h3 className="text-lg font-bold text-white leading-snug tracking-tight transition-all duration-500 ease-out-expo group-hover:translate-y-[-2px]">
                 {title}
               </h3>
-              <p className="text-sm text-neutral-300 tracking-tight transition-all duration-500 ease-out-expo group-hover:translate-y-[-2px] line-clamp-2">
+              <p className="text-sm text-neutral-300 tracking-tight transition-all duration-500 ease-out-expo group-hover:translate-y-[-2px]">
                 {description}
               </p>
             </div>
@@ -158,10 +159,10 @@ export default function CardFlip({
                 "from-zinc-800 via-zinc-800 to-zinc-800",
                 "hover:from-accentColor2/20 hover:from-0% hover:via-accentColor2/10 hover:via-100% hover:to-transparent hover:to-100%",
                 "hover:scale-[1.02] hover:cursor-pointer"
-              )}
+              )} onClick={onClickFunc}
             >
               <span className="text-sm font-medium text-white transition-colors duration-300 group-hover/start:text-accentColor2">
-                View details
+                Live Preview
               </span>
               <div className="relative group/icon">
                 <div
