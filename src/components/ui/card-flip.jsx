@@ -57,7 +57,7 @@ export default function CardFlip({
                   <div
                     key={i}
                     className={cn(
-                      "absolute w-[100px] h-[100px]",
+                      "absolute w-[95px] h-[95px]",
                       "rounded-[140px]",
                       "animate-[scale_3s_linear_infinite]",
                       "opacity-0",

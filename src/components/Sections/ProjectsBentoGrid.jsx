@@ -104,7 +104,7 @@ export const PortfolioBentoGrid = ({ className }) => {
                   </GlareHover>
                 </button>
               </div>
-              <div className="w-full aspect-[8/5] overflow-hidden mt-auto">
+              <div className="w-full aspect-video overflow-hidden mt-auto">
                 <Image
                   src={cpcMarketing}
                   alt="software agency business website"

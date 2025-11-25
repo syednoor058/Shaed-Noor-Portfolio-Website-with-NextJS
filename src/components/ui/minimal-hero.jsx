@@ -193,8 +193,7 @@ export default function MinimalHero() {
                     data-delay="3000"
                   >
                     <span className="">Software Engineer</span>
-                    <span className="">Full Stack Engineer</span>
-                    <span className="">SQA Engineer</span>
+                    <span className="">Full-Stack Developer</span>
                     <span className="">DevOps Engineer</span>
                   </TextLoop>
                 </div>

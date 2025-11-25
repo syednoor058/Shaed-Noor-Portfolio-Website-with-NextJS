@@ -4,6 +4,7 @@ import {
   BriefcaseBusiness,
   ConciergeBell,
   HouseIcon,
+  MessageSquareText,
   Phone,
   SquareUserRound,
 } from "lucide-react";
@@ -31,6 +32,7 @@ const navigationLinks = [
   { href: "/#about", label: "About", icon: SquareUserRound },
   { href: "/#services", label: "Services", icon: ConciergeBell },
   { href: "/#projects", label: "Projects", icon: BriefcaseBusiness },
+  { href: "/#testimonials", label: "Testimonials", icon: MessageSquareText },
 ];
 
 export default function Navbar() {
@@ -117,18 +119,16 @@ export default function Navbar() {
           </div>
           {/* Middle area */}
           <NavigationMenu className="max-md:hidden">
-            <NavigationMenuList className="gap-2">
+            <NavigationMenuList className="gap-4">
               {navigationLinks.map((link, index) => {
                 const Icon = link.icon;
                 return (
                   <NavigationMenuItem key={index}>
                     <NavigationMenuLink
                       href={link.href}
-                      className="flex size-8 items-center justify-center p-1 text-neutral-300 hover:text-neutral-100"
-                      title={link.label}
+                      className="flex items-center justify-center p-1 text-neutral-300 hover:text-neutral-100"
                     >
-                      <Icon aria-hidden="true" />
-                      <span className="sr-only">{link.label}</span>
+                      <div>{link.label}</div>
                     </NavigationMenuLink>
                   </NavigationMenuItem>
                 );

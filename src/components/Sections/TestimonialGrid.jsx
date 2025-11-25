@@ -5,6 +5,7 @@ import {
   Instagram,
   Linkedin,
   MessageCircleHeart,
+  Twitter,
 } from "lucide-react";
 import { useTheme } from "next-themes";
 import { useEffect, useState } from "react";
@@ -29,66 +30,60 @@ export default function TestimonialGrid() {
 
   const spotlightBgColor = resolvedTheme === "dark" ? "#262626" : "#262626";
   return (
-    <div className="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3">
+    <div className="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
       <TestimonialCard
         color={spotlightBgColor}
         name="Md Azizul Haque"
         designation="CEO, InterAiD"
-        feedback="Working with Shaed Noor has been a game-changer for us at InterAiD. From managing our Facebook page and running effective ads campaigns to keeping our website updated and professional — he has handled it all with care and consistency."
+        feedback="He developed and managed our e-learning platform, and the quality of work was incredible. The student dashboard, course management, payment workflow — everything works smoothly and feels very user-friendly. He also helped us maintain and update the platform regularly. A dependable developer who truly understands what a platform needs to grow."
         img={azizulImg}
         alt="azizul haque image"
-        icon={<Facebook width={16} height={16} />}
-        iconBg="bg-blue-500 text-white"
+        icon={<Facebook className="text-blue-400" width={28} height={28} />}
       />
       <TestimonialCard
         color={spotlightBgColor}
         name="Kazi Farhan Masum"
-        designation="SEO Specialist, Puppetbrush"
-        feedback="Our business grew faster than we imagined after partnering with Syed Noor. He showed obedient behavior and a work friendly attitude. He was always willing to offer his assistance. I wish him every success in his future endeavors."
+        designation="CTO, Puppetbrush"
+        feedback="We needed a clean business website and someone who could help us with SEO. He handled both flawlessly. The website has a very polished look, loads quickly, and the SEO improvements helped us rank for several important keywords within weeks. Very knowledgeable, patient, and always ready to explain things. Great experience working with him."
         img={farhanImg}
         alt="farhan masum image"
-        icon={<Linkedin width={16} height={16} />}
-        iconBg="bg-cyan-700 text-white"
+        icon={<Linkedin width={28} height={28} />}
       />
       <TestimonialCard
         color={spotlightBgColor}
         name="Tanjina Tanha"
-        designation="Owner, Tanha's Kitchen"
-        feedback="Absolutely loved working with Syed Shaeduzzaman Noor! He completely transformed our social media game at Sweet Cakes. Our engagement has gone way up, and we've even had customers mention he found us through our Instagram!"
+        designation="Founder, Treatos BD"
+        feedback="He built our full online pet store along with a POS system for our physical shop, and it completely transformed the way we run our business. Managing products, orders, and stock is now super easy. The POS is smooth and stable, and the online store looks very professional. Truly reliable and skilled — we are very happy with the results."
         img={tanhaImg}
         alt="tanjina tanha image"
-        icon={<MessageCircleHeart width={16} height={16} />}
-        iconBg="bg-pink-400 text-white"
+        icon={<Twitter className="text-cyan-400" width={28} height={28} />}
       />
       <TestimonialCard
         color={spotlightBgColor}
         name="Syed Mustafa Mehedi"
-        designation="Owner, Qahaf"
-        feedback="We're super happy with Syed Noor! His ad campaigns and social media management really boosted our clothing brand, Qahaf. He brought in great engagement and sales with a professional yet approachable style. Highly recommended!"
+        designation="Founder, Qahaf"
+        feedback="Our online clothing store was built from scratch, and the whole experience felt smooth and professional. The website looks modern, loads super fast, and the admin panel is very easy to manage. Thanks to him, we were able to launch Qahaf on time and start getting sales immediately. Great work ethic and great communication throughout the project."
         img={mehediImg}
         alt="mustafa mehedi image"
-        icon={<Instagram width={16} height={16} />}
-        iconBg="bg-gradient-to-tr from-blue-500 to-pink-500 text-white"
+        icon={<Instagram className="text-pink-600" width={28} height={28} />}
       />
       <TestimonialCard
         color={spotlightBgColor}
         name="Rhituparna Das"
-        designation="Doctor"
-        feedback="We are incredibly pleased with Syed! He developed a fantastic real estate management system for us that is streamlined our operations. His team was professional, responsive, and delivered exactly what we needed. Highly recommend his services!"
+        designation="Co-founder, Shikdar Foundation"
+        feedback="We needed a complete real estate management solution that could handle apartments, tenants, payments, and reporting in one place. He not only built exactly what we wanted but also added features we didn’t even think of. The system is fast, organized, and has made our daily operations way easier. His support after delivery was also excellent. Highly recommended!"
         img={rituImg}
         alt="ritu das image"
-        icon={<Facebook width={16} height={16} />}
-        iconBg="bg-blue-500 text-white"
+        icon={<Facebook className="text-blue-400" width={28} height={28} />}
       />
       <TestimonialCard
         color={spotlightBgColor}
         name="Rakib Shikder"
-        designation="Owner, Retrofino"
-        feedback="I am thrilled with the results from our recent ad campaign run by Shaed Noor! With just a small budget, he helped us reach almost twenty thousands of local people and generated two hundreds of real customer messages."
+        designation="Founder, Retrofino"
+        feedback="I wanted a premium sportswear e-commerce website, and he delivered beyond expectations. From product filtering to the cart, checkout, and inventory system, everything works perfectly. The UI is clean and gives a branded feel. He was proactive, solved problems quickly, and always kept us updated. We’ll definitely work with him again!"
         img={RakibImage}
         alt="rakib shikdar image"
-        icon={<Instagram width={16} height={16} />}
-        iconBg="bg-gradient-to-tr from-blue-500 to-pink-500 text-white"
+        icon={<Instagram className="text-pink-600" width={28} height={28} />}
       />
     </div>
   );
