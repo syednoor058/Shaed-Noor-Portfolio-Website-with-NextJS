@@ -4,7 +4,7 @@ import { cn } from "@/lib/utils";
 import { ArrowRight, Repeat2 } from "lucide-react";
 import Image from "next/image";
 import { useState } from "react";
-import mailNotification from "../../../public/images/portfolio/mail-notification.png";
+import mailNotification from "../../../public/images/portfolio/mail-notification.webp";
 
 export default function CardFlip({
   title = "Full Stack Ecommerce Application with Next JS",

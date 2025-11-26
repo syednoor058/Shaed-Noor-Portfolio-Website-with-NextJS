@@ -3,16 +3,15 @@
 import { cn } from "@/lib/utils";
 import { BookOpen } from "lucide-react";
 import Image from "next/image";
-import cpcMarketing from "../../../public/images/portfolio/cpc-marketing.png";
-import gymWeb from "../../../public/images/portfolio/gym-web.png";
-import petShopEcommerce from "../../../public/images/portfolio/petshop-ecommerce.png";
-import realEstate from "../../../public/images/portfolio/real-estate-software.png";
+import cpcMarketing from "../../../public/images/portfolio/cpc-marketing.webp";
+import gymWeb from "../../../public/images/portfolio/gym-web.webp";
+import petShopEcommerce from "../../../public/images/portfolio/petshop-ecommerce.webp";
+import realEstate from "../../../public/images/portfolio/real-estate-software.webp";
 import { SecondaryButton } from "../Buttons/buttons";
 import CardFlip from "../ui/card-flip";
 import { useState } from "react";
-import gymDemo from "../../../public/images/demo/gym-website-demo.png";
-import petShopDemo from "../../../public/images/demo/petshop-website-demo.jpg";
-import digitalAgencyDemo from "../../../public/images/demo/agency-business-website-demo.jpg";
+import gymDemo from "../../../public/images/demo/gym-website-demo.webp";
+import petShopDemo from "../../../public/images/demo/petshop-website-demo.webp";
 import ProjectModal from "../Modals/ProjectModal";
 import GlareHover from "../ui/glare-hover";
 export const PortfolioBentoGrid = ({ className }) => {
