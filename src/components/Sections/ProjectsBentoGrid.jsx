@@ -35,6 +35,10 @@ export const PortfolioBentoGrid = ({ className }) => {
       title: "Lumivance - Full Stack Ecommerce Application",
       url: "https://lumivance-ecommerce.vercel.app/",
     },
+    realEstateManagement: {
+      title: "Real Estate Management System",
+      url: "https://sikder-foundation.vercel.app/",
+    },
   };
 
   return (
@@ -69,7 +73,7 @@ export const PortfolioBentoGrid = ({ className }) => {
                   </button>
                 </div>
               </div>
-              <div className="w-full aspect-[4/3] overflow-hidden mt-3">
+              <div className="w-full aspect-[4/3] overflow-hidden mt-4 lg:mt-auto">
                 <Image
                   src={gymWeb}
                   alt="Gym center business website"
@@ -103,7 +107,7 @@ export const PortfolioBentoGrid = ({ className }) => {
                   </GlareHover>
                 </button>
               </div>
-              <div className="w-full aspect-video overflow-hidden mt-auto">
+              <div className="w-full aspect-video overflow-hidden mt-3 lg:mt-auto">
                 <Image
                   src={cpcMarketing}
                   alt="software agency business website"
@@ -126,12 +130,21 @@ export const PortfolioBentoGrid = ({ className }) => {
               manage inventory, customer, employtee, and projects day to day.
             </p>
             <div className="flex mt-3 xl:mt-5">
-              <SecondaryButton
-                icon={<BookOpen width={20} height={20} />}
-                text="View Demo"
-                className="text-neutral-300 border-neutral-300"
-              />
-            </div>
+                <button
+                  className="text-neutral-300 border-neutral-300 flex border  transition-colors duration-300 rounded-xs justify-center items-center overflow-hidden cursor-pointer"
+                  onClick={() => setOpenProject(projects.realEstateManagement)}
+                >
+                  <GlareHover
+                    glareOpacity={0.4}
+                    className={`relative px-[22px] py-[10px] gap-3 z-[5] flex flex-row justify-center items-center whitespace-nowrap`}
+                  >
+                    <span>
+                      <BookOpen width={20} height={20} />
+                    </span>
+                    Live Preview
+                  </GlareHover>
+                </button>
+              </div>
             <div className="w-full aspect-video relative overflow-hidden mt-5">
               <Image
                 src={realEstate}
@@ -164,7 +177,7 @@ export const PortfolioBentoGrid = ({ className }) => {
                 </GlareHover>
               </button>
             </div>
-            <div className="w-full aspect-video relative overflow-hidden mt-auto">
+            <div className="w-full aspect-video relative overflow-hidden mt-3 lg:mt-auto">
               <Image
                 src={petShopEcommerce}
                 alt="Petshop e-commerce web application"
