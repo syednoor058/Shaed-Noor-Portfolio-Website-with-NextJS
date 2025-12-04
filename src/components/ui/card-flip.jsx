@@ -1,24 +1,20 @@
 "use client";
 
 import { cn } from "@/lib/utils";
-import { ArrowRight, Repeat2 } from "lucide-react";
+import { ArrowRight, BookOpen, Repeat2 } from "lucide-react";
 import Image from "next/image";
 import { useState } from "react";
-import mailNotification from "../../../public/images/portfolio/mail-notification.webp";
+import GlareHover from "./glare-hover";
 
 export default function CardFlip({
-  title = "Full Stack Ecommerce Application with Next JS",
-  subtitle = "Hover on the card to see more details.",
-  description = "Lumivance is an open-source Next.js eCommerce frontend project. It provides a modern, fast and customizable shopping UI.",
-  features = [
-    "Server-side-rendering with Next JS",
-    "Modern UI experience with Tailwind CSS",
-    "Full stack integeration",
-    "User authentication is managed by Clerk",
-    "Secured database hosted on MongoDB",
-    "Full responsive interface",
-  ],
-  onClickFunc = {}
+  title = "",
+  description = "",
+  features = [],
+  onClickFunc = {},
+  imageSrc={},
+  btnName="Live Preview",
+  alt="",
+  aspectRatio = "aspect-video",
 }) {
   const [isFlipped, setIsFlipped] = useState(false);
 
@@ -50,56 +46,38 @@ export default function CardFlip({
             isFlipped ? "opacity-0" : "opacity-100"
           )}
         >
-          <div className="relative h-full overflow-hidden bg-gradient-to-b from-zinc-900 to-black">
-            <div className="absolute inset-0 flex items-start justify-center pt-24">
-              <div className="relative w-[200px] h-[200px] flex items-center justify-center">
-                {[...Array(10)].map((_, i) => (
-                  <div
-                    key={i}
-                    className={cn(
-                      "absolute w-[95px] h-[95px]",
-                      "rounded-[140px]",
-                      "animate-[scale_3s_linear_infinite]",
-                      "opacity-0",
-                      "shadow-[0_0_50px_rgba(81,112,255,0.5)]",
-                      "group-hover:animate-[scale_2s_linear_infinite]"
-                    )}
-                    style={{
-                      animationDelay: `${i * 0.3}s`,
-                    }}
-                  />
-                ))}
-                <div className="absolute w-32 h-32 overflow-hidden">
-                  <Image
-                    src={mailNotification}
-                    alt="main notification"
-                    className="w-full h-full object-cover"
-                  />
-                </div>
+          <div className="relative w-full h-full flex flex-col gap-4 justify-between overflow-hidden bg-gradient-to-b from-zinc-900 to-black">
+            <div className="space-y-1.5">
+              <h3 className="text-lg font-bold text-white leading-snug tracking-tighter transition-all duration-500 ease-out-expo group-hover:translate-y-[-4px]">
+                {title}
+              </h3>
+              <p className="text-sm tracking-tight transition-all duration-500 ease-out-expo group-hover:translate-y-[-4px] delay-[50ms]">
+                {description}
+              </p>
+              <div className="flex mt-3 xl:mt-5">
+                <button
+                  className="text-neutral-300 border-neutral-300 flex border  transition-colors duration-300 rounded-xs justify-center items-center overflow-hidden cursor-pointer"
+                  onClick={() => setOpenProject(projects.digitalAgency)}
+                >
+                  <GlareHover
+                    glareOpacity={0.4}
+                    className={`relative px-[22px] py-[10px] gap-3 z-[5] flex flex-row justify-center items-center whitespace-nowrap`}
+                  >
+                    <span>
+                      <BookOpen width={20} height={20} />
+                    </span>
+                    View Details
+                  </GlareHover>
+                </button>
               </div>
             </div>
-          </div>
-
-          <div className="absolute bottom-0 left-0 right-0 p-5">
-            <div className="flex items-center justify-between gap-5">
-              <div className="space-y-1.5">
-                <h3 className="text-lg font-bold text-white leading-snug tracking-tighter transition-all duration-500 ease-out-expo group-hover:translate-y-[-4px]">
-                  {title}
-                </h3>
-                <p className="text-sm text-neutral-300 line-clamp-2 tracking-tight transition-all duration-500 ease-out-expo group-hover:translate-y-[-4px] delay-[50ms]">
-                  {subtitle}
-                </p>
-              </div>
-              <div className="relative group/icon">
-                <div
-                  className={cn(
-                    "absolute inset-[-8px] rounded-lg transition-opacity duration-300",
-                    "bg-gradient-to-br from-accentColor2/20 via-accentColor2/10 to-transparent"
-                  )}
+              <div className={`relative w-full ${aspectRatio} overflow-hidden`}>
+                <Image
+                  src={imageSrc}
+                  alt={alt}
+                  className="relative w-full h-full object-cover z-1"
                 />
-                <Repeat2 className="relative z-10 w-4 h-4 text-accentColor2 transition-transform duration-300 group-hover/icon:scale-110 group-hover/icon:-rotate-12" />
               </div>
-            </div>
           </div>
         </div>
 
@@ -109,7 +87,7 @@ export default function CardFlip({
             "absolute inset-0 w-full h-full",
             "[backface-visibility:hidden] [transform:rotateY(180deg)]",
             "p-6 rounded-2xl",
-            "bg-gradient-to-b from-zinc-900 to-black",
+            "bg-gradient-to-b from-pink-950 to-black",
             "border border-neutral-600",
             "shadow-lg",
             "flex flex-col",
@@ -123,7 +101,7 @@ export default function CardFlip({
               <h3 className="text-lg font-bold text-white leading-snug tracking-tight transition-all duration-500 ease-out-expo group-hover:translate-y-[-2px]">
                 {title}
               </h3>
-              <p className="text-sm text-neutral-300 tracking-tight transition-all duration-500 ease-out-expo group-hover:translate-y-[-2px]">
+              <p className="text-sm tracking-tight transition-all duration-500 ease-out-expo group-hover:translate-y-[-2px]">
                 {description}
               </p>
             </div>
@@ -153,16 +131,16 @@ export default function CardFlip({
               className={cn(
                 "group/start relative",
                 "flex items-center justify-between",
-                "p-3 -m-3 rounded-xl",
+                "p-3 border border-white bg-white hover:bg-transparent",
                 "transition-all duration-300",
-                "bg-gradient-to-r",
-                "from-zinc-800 via-zinc-800 to-zinc-800",
                 "hover:from-accentColor2/20 hover:from-0% hover:via-accentColor2/10 hover:via-100% hover:to-transparent hover:to-100%",
-                "hover:scale-[1.02] hover:cursor-pointer"
-              )} onClick={onClickFunc}
+                "hover:scale-[1.02] hover:cursor-pointer",
+                "text-neutral-950 hover:text-white"
+              )}
+              onClick={onClickFunc}
             >
-              <span className="text-sm font-medium text-white transition-colors duration-300 group-hover/start:text-accentColor2">
-                Live Preview
+              <span className=" transition-colors duration-300 group-hover/start:text-accentColor2">
+                {btnName}
               </span>
               <div className="relative group/icon">
                 <div
