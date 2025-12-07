@@ -6,7 +6,6 @@ import gymWeb from "../../../public/images/portfolio/gym-web.webp";
 import petShopEcommerce from "../../../public/images/portfolio/petshop-ecommerce.webp";
 import realEstate from "../../../public/images/portfolio/real-estate-software.webp";
 import { useState } from "react";
-import gymDemo from "../../../public/images/demo/gym-website-demo.webp";
 import petShopDemo from "../../../public/images/demo/petshop-website-demo.webp";
 import lumivanceScrnshot from "../../../public/images/portfolio/lumivance_emrce_scrnshot.webp";
 import carRentalAppScrnshot from "../../../public/images/portfolio/car_rental_scrnsht.webp";
@@ -17,8 +16,8 @@ export const PortfolioBentoGrid = ({ className }) => {
   const projects = {
     gym: {
       title: "Pulse Fitness - Responsive Business Website",
-      image: gymDemo.src,
-      alt: "Pulse Fitness - Gym center business website demo screenshot",
+      url: "https://pulse-fitness-gym.vercel.app/",
+      title: "Pulse Fitness - Gym center business website demo screenshot",
     },
     digitalAgency: {
       url: "https://devion-ark-website.vercel.app/",

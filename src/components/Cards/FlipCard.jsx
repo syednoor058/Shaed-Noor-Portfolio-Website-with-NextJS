@@ -17,7 +17,7 @@ export default function FlipCard({
   features = [],
   imageSrc = "",
   alt = "",
-  btnName = "View Details",
+  btnName = "Live Preview",
   onClickFunc = () => {},
   aspectRatio = "aspect-video",
 }) {
