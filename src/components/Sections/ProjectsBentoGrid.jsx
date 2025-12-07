@@ -96,7 +96,6 @@ export const PortfolioBentoGrid = ({ className }) => {
               imageSrc={gymWeb}
               alt="Gym center business website"
               aspectRatio="aspect-[800/600]"
-              btnName="View Demo"
             />
           </div>
         </div>
