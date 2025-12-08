@@ -25,7 +25,7 @@ export default function ProjectModal({ isOpen, onClose, projectDemo }) {
             exit={{ opacity: 0, scale: 0.8 }}
           >
             <div
-              className="relative bg-zinc-900 border border-zinc-700 rounded-sm shadow-2xl w-[95%] max-w-6xl aspect-9/14 md:aspect-[16/8] overflow-hidden"
+              className="relative bg-zinc-900 border border-zinc-700 rounded-sm shadow-2xl w-[95%] h-[95%] overflow-hidden"
               onClick={(e) => e.stopPropagation()}
             >
               <div className="w-full bg-neutral-900 flex flex-row gap-5 items-center justify-between px-4 py-2 ">
